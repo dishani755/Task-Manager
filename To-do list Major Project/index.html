@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+        integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./style.css">
+    <title>Todo List</title>
+</head>
+<body>
+    <header>
+        <h1> Todo List</h1>
+    </header>
+
+    
+    <div class="h2"><h2>create your task</h2></div>
+
+
+
+
+    <form>
+        <input type="text" placeholder="+ Add" class="todo-input">
+        <select name="task-priority" id="priority">
+            <option value="none" selected>select-priority</option>
+            <option value="Low">low</option>
+            <option value="Medium">medium</option>
+            <option value="High">High</option>
+
+        </select>
+        <button class="todo-button" type="submit">Add</button>
+    </form>
+
+
+    <div class="priority-btns">
+        <button id="btns" value="high" class="high-btn">High</button>
+        <button id="btns" value="medium" class="medium-btn">Medium</button>
+        <button id="btns" value="low" class="low-btn">Low</button>
+        <button id="btns" value="all" class="all-btn">All</button>
+
+    </div>
+
+
+
+    <div class="todo-container">
+        <ul class="todo-list"></ul>
+    </div>
+    
+    
+
+
+
+    <script src="./app.js"></script>
+</body>
+</html>
